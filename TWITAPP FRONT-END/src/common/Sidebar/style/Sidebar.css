@@ -1,0 +1,11 @@
+.sidebar .nav {
+    padding: 0px !important;
+}
+
+.sidebar ul li :hover{
+    background-color: rgb(50, 216, 100);
+}
+
+.useMenu:hover{
+    background-color: rgb(50, 216, 100);
+}
