@@ -1,0 +1,56 @@
+.login {
+     background-color: rgba(255, 255, 255, 0.8);
+     border-radius: 10px;
+     max-width: 500px;
+     margin: -50%;
+     padding: 90px;
+     margin-top: 30px;
+     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+     border-color: pink;
+    background: rgb(185, 217, 245);
+ }
+
+ .form-control,
+ input[type='email'],
+ input[type='password'] {
+     display: block;
+     width: 95%;
+     margin-bottom: 10px;
+ }
+
+ .form-control {
+     padding: 10px;
+     border-radius: 7px;
+     border: none;
+     background-color: #e2dad7;
+ }
+
+ .btn {
+     padding: 10px 20px;
+     border-radius: 5px;
+     border: none;
+     background-color: #6caf2d;
+     color: #fff;
+    
+ }
+
+ .botLog{
+    position: relative;
+        left: 100px;
+ }
+
+ .btn:hover {
+     background-color: #cfa076;
+ }
+
+ .text-black {
+     color: #989ba2;
+ }
+
+ .imaLog {
+     position: relative;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     margin: 0;
+ }

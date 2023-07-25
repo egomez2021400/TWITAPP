@@ -1,0 +1,109 @@
+/* Estilos para el formulario */
+.form23 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="file"],
+input[type="text"] {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.sub[type="submit"] {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sub[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para el cuadro de búsqueda */
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+  padding: 10px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+  background-color: #f5f5f5; /* Color de fondo para el campo de búsqueda */
+}
+
+.search-bar .sub1 {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search-bar .sub1:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para las cards de publicaciones */
+.card34 {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.card-body1 {
+  padding: 10px;
+}
+
+.card-title1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card34 img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+/* Estilos para los botones de reacción */
+button.btn24 {
+  margin-right: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.btn24:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para el botón "Eliminar" */
+button.btn12-danger {
+  margin-top: 10px;
+  background-color: #dc3545;
+}
+
+button.btn12-danger:hover {
+  background-color: #c82333;
+}

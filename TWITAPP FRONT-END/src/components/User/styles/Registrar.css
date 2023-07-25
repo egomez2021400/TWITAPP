@@ -1,0 +1,24 @@
+ .registrar {
+     background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 90px;
+    padding: 90px;
+     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: 1%;
+    background: rgb(185, 217, 245);
+    
+ }
+
+ .btreg{
+    position: relative;
+        left: 85px;
+ }
+
+.ima1 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    height: 120px;
+}
