@@ -1,0 +1,364 @@
+{
+	"info": {
+		"_postman_id": "22482637-2526-4789-aa2a-7fd59e658bb8",
+		"name": "TWITAPP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuario",
+			"item": [
+				{
+					"name": "Agregar Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "imagen",
+									"value": "C:\\Imagenes trello/0% mañana",
+									"type": "default"
+								},
+								{
+									"key": "name",
+									"value": "Negrito",
+									"type": "default"
+								},
+								{
+									"key": "nombre",
+									"value": "Cristian Neftali",
+									"type": "default"
+								},
+								{
+									"key": "apellido",
+									"value": "Gómez García",
+									"type": "default"
+								},
+								{
+									"key": "genero",
+									"value": "Masculino",
+									"type": "default"
+								},
+								{
+									"key": "edad",
+									"value": "14",
+									"type": "default"
+								},
+								{
+									"key": "direccion",
+									"value": "Guatemala, Chinautla",
+									"type": "default"
+								},
+								{
+									"key": "email",
+									"value": "cgomez-2021401@kinal.edu.gt",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "SHANDERG001@#",
+									"type": "default"
+								},
+								{
+									"key": "rol",
+									"value": "USUARIO",
+									"type": "default"
+								}
+							]
+						},
+						"url": "localhost:3005/api/create-user"
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Usuarios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:3005/api/read-user"
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Usuario",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "nombre",
+									"value": "Cristian Neftali",
+									"type": "default"
+								}
+							]
+						},
+						"url": "localhost:3005/api/update-user/64b7904e14b5a871345c2bd7"
+					},
+					"response": []
+				},
+				{
+					"name": "Perfil Usuario",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2NGI3OTA0ZTE0YjVhODcxMzQ1YzJiZDciLCJuYW1lIjoiTmVncml0byIsImVtYWlsIjoiY2dvbWV6LTIwMjE0MDFAa2luYWwuZWR1Lmd0IiwiaWF0IjoxNjg5NzUxNjMwLCJleHAiOjE2ODk3Njk2MzB9.NlLGVu6JslgG4GKLR9T_bUzfnkcatRWFndc_ZREVJ3c",
+								"type": "default"
+							}
+						],
+						"url": "localhost:3005/api/profile"
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "cgomez-2021401@kinal.edu.gt",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "SHANDERG001@#",
+									"type": "default"
+								}
+							]
+						},
+						"url": "localhost:3005/api/login"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Amistad",
+			"item": [
+				{
+					"name": "Agregar Amistad a User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2NGI3OTA0ZTE0YjVhODcxMzQ1YzJiZDciLCJuYW1lIjoiTmVncml0byIsImVtYWlsIjoiY2dvbWV6LTIwMjE0MDFAa2luYWwuZWR1Lmd0IiwiaWF0IjoxNjkwMjU5NjAxLCJleHAiOjE2OTAyNzc2MDF9.WGdgRvrv4tWMT9gEIZHPX8Z1hJ0KebXhLwwnCIQWWTQ",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": "localhost:3005/api/addAmis/64b9763b2ea96adfac808403"
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Amistades de User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2NGI3OTA0ZTE0YjVhODcxMzQ1YzJiZDciLCJuYW1lIjoiTmVncml0byIsImVtYWlsIjoiY2dvbWV6LTIwMjE0MDFAa2luYWwuZWR1Lmd0IiwiaWF0IjoxNjkwMjU5NjAxLCJleHAiOjE2OTAyNzc2MDF9.WGdgRvrv4tWMT9gEIZHPX8Z1hJ0KebXhLwwnCIQWWTQ",
+								"type": "default"
+							}
+						],
+						"url": "localhost:3005/api/read-amistades"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Publicaciones",
+			"item": [
+				{
+					"name": "Agregar Publicación",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "imagen",
+									"value": "C:\\Imagenes trello/0% mañana",
+									"type": "default"
+								},
+								{
+									"key": "texto",
+									"value": "Hoy dormi mal",
+									"type": "default"
+								},
+								{
+									"key": "like",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "dislike",
+									"value": "10",
+									"type": "default"
+								}
+							]
+						},
+						"url": "localhost:3005/api/publicacion/64b9763b2ea96adfac808403"
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Publicaciones",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:3005/api/read-publicaciones"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Publicación",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:3005/api/delete-publicacion/64b7904e14b5a871345c2bd7/64b8a099263df3c52b4477e9"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mensajes",
+			"item": [
+				{
+					"name": "Enviar Mensajes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2NGI3OTA0ZTE0YjVhODcxMzQ1YzJiZDciLCJuYW1lIjoiTmVncml0byIsImVtYWlsIjoiY2dvbWV6LTIwMjE0MDFAa2luYWwuZWR1Lmd0IiwiaWF0IjoxNjkwMzEzMzEyLCJleHAiOjE2OTAzMzEzMTJ9.vYWPpuFgwbAYO_N2gKVmHBeTcaLfd9X960u39mJ_T9o",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "IdUserReceptor",
+									"value": "64b7904e14b5a871345c2bd7",
+									"type": "default"
+								},
+								{
+									"key": "texto",
+									"value": "Hola, ¿Cómo estas?",
+									"type": "default"
+								}
+							]
+						},
+						"url": "localhost:3005/api/message"
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Mensaje de User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2NGI3OTA0ZTE0YjVhODcxMzQ1YzJiZDciLCJuYW1lIjoiTmVncml0byIsImVtYWlsIjoiY2dvbWV6LTIwMjE0MDFAa2luYWwuZWR1Lmd0IiwiaWF0IjoxNjkwMzEzMzEyLCJleHAiOjE2OTAzMzEzMTJ9.vYWPpuFgwbAYO_N2gKVmHBeTcaLfd9X960u39mJ_T9o",
+								"type": "default"
+							}
+						],
+						"url": "localhost:3005/api/listMessage"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Mensaje",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "localhost:3005/api/deleteMessage/64b8bec90b18df6802c6fb29"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Encuesta",
+			"item": [
+				{
+					"name": "Crear Encuesta",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2NGI3OTAyOTE0YjVhODcxMzQ1YzJiZDQiLCJuYW1lIjoiU2hhbmRlciIsImVtYWlsIjoiZWdvbWV6LTIwMjE0MDBAa2luYWwuZWR1Lmd0IiwiaWF0IjoxNjg5OTE0NzUzLCJleHAiOjE2ODk5MzI3NTN9.Ft2dIDpsOVTVeH36qDjbKbwr3oSn_LFCn2AO5SyhmA0",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "pregunta",
+									"value": "¿Quien es mejor?",
+									"type": "default"
+								},
+								{
+									"key": "likes",
+									"value": "10",
+									"type": "default"
+								},
+								{
+									"key": "dislikes",
+									"value": "5",
+									"type": "default"
+								}
+							]
+						},
+						"url": "localhost:3005/api/Addencuesta"
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Encuesta",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:3005/api/encuesta"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Encuesta User",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1SWQiOiI2NGI3OTAxNzE0YjVhODcxMzQ1YzJiY2YiLCJuYW1lIjoiQURNSU4iLCJlbWFpbCI6ImFkbWludHdpdGFwcEBnbWFpbC5jb20uZ3QiLCJpYXQiOjE2OTAwODMzMzQsImV4cCI6MTY5MDEwMTMzNH0.Z1ujtuQTgFOJ9MvtKDcNBE-E3Ttx23LrnW7cM7bUGA4",
+								"type": "default"
+							}
+						],
+						"url": "localhost:3005/api/deleteEncuesta/64bca506b50a924349b5603e"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
