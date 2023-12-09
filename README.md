@@ -12,7 +12,7 @@ Colección de postman:
 Importar la colección de postman en el programa llamado "Postman".
 
 Pasos:
-Legearse con un usuario.
+Logearse con un usuario.
 Si no tiene un correo o contraseña en la pagina crear un nuevo usuario, llenar los datos en "crear usuario".
 Interactuar con cualquier opción de las que muestra la pagina.
 
