@@ -21,6 +21,5 @@ Iniciar sesión:
 Conéctate con tu usuario existente.
 ¿No tienes cuenta?
 Crea un nuevo usuario desde la opción "Crear Usuario" y completa los datos necesarios.
-¡Explora y diviértete!
 
 Interactúa con las opciones disponibles en la página: envía mensajes, comparte imágenes, agrega amigos y mucho más.
