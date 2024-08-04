@@ -1,4 +1,6 @@
-Proyecto TWITAPP
+🎉 ¡Bienvenido a TWITAPP! 🎉
+
+TWITAPP es una plataforma web moderna que facilita la comunicación entre usuarios a través de mensajes de texto e imágenes. Con TWITAPP, puedes interactuar de manera fluida, editar y eliminar tus publicaciones, y explorar diversas funciones como ver videos, buscar contenido, y gestionar amigos mediante nuestras APIs públicas.
 
 Back-end:
 Descargar el node_module con "npm install".
@@ -8,12 +10,17 @@ Front-end:
 Descargar el node_module con "yarn install".
 Inicializar el proyecto con "yarn dev".
 
-Colección de postman:
-Importar la colección de postman en el programa llamado "Postman".
+📦 Colección de Postman
+Importar la colección de Postman:
+Abre Postman.
+Importa la colección proporcionada para probar los endpoints del back-end.
 
-Pasos:
-Logearse con un usuario.
-Si no tiene un correo o contraseña en la pagina crear un nuevo usuario, llenar los datos en "crear usuario".
-Interactuar con cualquier opción de las que muestra la pagina.
+🛠️ Pasos para Usar la Aplicación
+Iniciar sesión:
 
-¡Gracias, Buena día!
+Conéctate con tu usuario existente.
+¿No tienes cuenta?
+Crea un nuevo usuario desde la opción "Crear Usuario" y completa los datos necesarios.
+¡Explora y diviértete!
+
+Interactúa con las opciones disponibles en la página: envía mensajes, comparte imágenes, agrega amigos y mucho más.
